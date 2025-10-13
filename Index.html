@@ -14,16 +14,19 @@
         <h4>Juan Perez Lopez</h4>
         <p>Desarrollador fullstack | Estudiante de ingeniaeria en TI</p>
     </header>
-    <nav>
-        <a href="#">IInicio </a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Mi contenido</a>
-        <a href="#">Contactame</a>
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="#bienvenida">Sobre mi</a></li>
+            <li><a href="#experiencia">Mi contenido</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contactame</a></li>
+        </ul>
+
     </nav>
     <!--PARTE PRINCIPAL-->
 
     <main>
-        <section>
+        <section id="bienvenida">
             <h2>Bienvenidos a mi portafolio Profecional</h2>
             <p><mark>Jose Abraham Cocom Ucanen</mark> me especializo en <strong>Tegnologias de la Informacion</strong>
                 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
@@ -41,41 +44,87 @@
                 <p> Actualmente estudio la carrera en Tecnologias de la Informacion e Inovacion Digital</p>
             </acide>
         </section>
-        <section>
+        <section id="experiencia">
             <h2> Experiencia Profecional</h2>
-            <article>
-                <h3>Proyecto Integrador I</h3>
-                <p>Lorem Ipsum es simplemente el texto...</p>
-                <time datetime= "2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologias: .NET</li>
-                    <li>Gestion de inventarios</li>
-                    <li>Basado en la ODS</li>
-                    <li>Trabajo en Equipo</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Proyecto Integrador II</h3>
-                <p>Lorem Ipsum es simplemente el texto...</p>
-                <time datetime= "2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologias: .NET</li>
-                    <li>Gestion de inventarios</li>
-                    <li>Basado en la ODS</li>
-                    <li>Trabajo en Equipo</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Proyecto Integrador III</h3>
-                <p>Lorem Ipsum es simplemente el texto...</p>
-                <time datetime= "2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologias: .NET</li>
-                    <li>Gestion de inventarios</li>
-                    <li>Basado en la ODS</li>
-                    <li>Trabajo en Equipo</li>
-                </ul>
-            </article>
+            <div id="lista-proyectos">
+                <article class="proyecto">
+                    <h3>Proyecto Integrador I</h3>
+                    <p>Lorem Ipsum es simplemente el texto...</p>
+                    <time datetime="2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologias: .NET</li>
+                        <li>Gestion de inventarios</li>
+                        <li>Basado en la ODS</li>
+                        <li>Trabajo en Equipo</li>
+                    </ul>
+                </article>
+                <article class="proyecto">
+                    <h3>Proyecto Integrador II</h3>
+                    <p>Lorem Ipsum es simplemente el texto...</p>
+                    <time datetime="2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologias: .NET</li>
+                        <li>Gestion de inventarios</li>
+                        <li>Basado en la ODS</li>
+                        <li>Trabajo en Equipo</li>
+                    </ul>
+                </article>
+                <article class="proyecto">
+                    <h3>Proyecto Integrador III</h3>
+                    <p>Lorem Ipsum es simplemente el texto...</p>
+                    <time datetime="2025-05"> Mayo 2025</time><time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologias: .NET</li>
+                        <li>Gestion de inventarios</li>
+                        <li>Basado en la ODS</li>
+                        <li>Trabajo en Equipo</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades y competencia</h2>
+            <h3>Lenguajes y Tecnologias</h3>
+            <ul class="lista-tecnologias">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>ls</li>
+                <li>C#</li>
+            </ul>
+            <h3>Niveles de Dominio</h3>
+            <div>
+                <label>HTML5</label>
+                <progress max="100" value="88">88%</progress>
+            </div>
+            <div>
+                <label>CSS</label>
+                <progress max="100" value="60">60%</progress>
+            </div>
+            <div>
+                <label>JavaScript</label>
+                <progress max="100" value="20">20%</progress>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contactame</h2>
+            <form>
+                <div class="campos">
+                    <label>Nombre Completo</label>
+                    <input type="text" value="" placeholder="Nombre Completo" required/>
+                </div>
+                <div class="campos">
+                    <label>Correo Electronico</label>
+                    <input type="email" value="" placeholder="ejemplo@gmail.com" required/>
+                </div>
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div class="campos">
+                    <!--input type="button" value="Enviar"/-->
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
     <!--PIE DE PAGINA-->
