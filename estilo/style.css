@@ -112,21 +112,28 @@ progress {
     margin: 10px 0;
     background: red;
 }
-#contacto{
+
+#contacto {
     padding: 30px 20px;
     background-color: #fff;
     border-top: solid 5px red;
 }
-#contacto label{
+
+#contacto label {
     font-size: 20px;
+
 }
-#contacto input,textarea{
-     font-size: 20px;
+
+#contacto input,
+textarea,
+select {
+    font-size: 20px;
     border: solid 1px blue;
     padding: 10px;
     width: 30%;
 }
-#contacto button{
+
+#contacto button {
     background-color: purple;
     color: #fff;
     padding: 20px 30px;
@@ -135,7 +142,13 @@ progress {
     width: 200px;
     font-size: 20px;
 }
-.campos{
+
+.campos {
     clear: both;
     padding-top: 20px;
+}
+
+#contacto .opciones {
+    width: 10px;
+    padding: 10px;
 }

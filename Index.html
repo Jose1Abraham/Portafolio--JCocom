@@ -110,15 +110,45 @@
             <form>
                 <div class="campos">
                     <label>Nombre Completo</label>
-                    <input type="text" value="" placeholder="Nombre Completo" required/>
+                    <input type="text" value="" placeholder="Nombre Completo" required />
                 </div>
                 <div class="campos">
                     <label>Correo Electronico</label>
-                    <input type="email" value="" placeholder="ejemplo@gmail.com" required/>
+                    <input type="email" value="" placeholder="ejemplo@gmail.com" required />
                 </div>
                 <div class="campos">
                     <label>Mensaje</label>
                     <textarea></textarea>
+                </div>
+                <div class="campos">
+                    <label for="">Motivo de contacto</label>
+                    <select name="" id="">
+                        <option value="">Cotización</option>
+                        <option value="">Prácticas profesionales</option>
+                        <option value="">Otro</option>
+                    </select>
+                </div>
+                <div class="campos">
+                    <label>Fecha Evento</label>
+                    <input type="date" placeholder="aaaa-mm-dd" />
+                </div>
+                <div class="campos">
+                    <label>Modo de contacto</label>
+                    <input type="checkbox" class="opciones"> WhatsApp
+                    <input type="checkbox" class="opciones"> Correo Electronico
+                </div>
+                <div class="campos">
+                    <label>¿Es cliente?</label>
+                    <input type="radio" name="cliente" class="opciones"> Si
+                    <input type="radio" name="cliente" class="opciones"> No
+                </div>
+                <div class="campos">
+                    <label>Numero de colaboradores</label>
+                    <input type="number" />
+                </div>
+                <div class="campos">
+                    <label>Enviar requerimientos</label>
+                    <input type="file" name="foto">
                 </div>
                 <div class="campos">
                     <!--input type="button" value="Enviar"/-->
